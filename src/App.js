@@ -32,12 +32,12 @@ function App() {
     <>
       <Header />
       <div className="container">
-        {/* {ButtonExpandData.map((obj,index) => (
-        <Card  id={obj.id} name={obj.name} description={obj.description} isExpanded={index === selected} onExpand={onExpand}/>
-      ))} */}
+      {ButtonExpandData.map((obj,index) => (
+       <Card  id={obj.id} name={obj.name} description={obj.description} isExpanded={index === selected} onExpand={onExpand}/>
+      ))}
         {todos.map((obj, index) => (
           <TaskCard key={index} id={obj.id} Task={obj.Task} handleDelete={deleteTask} />
-        ))}
+         ))}
       </div>
     </>
   );
